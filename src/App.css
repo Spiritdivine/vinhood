@@ -1,0 +1,44 @@
+*, *::after, *::before{
+  margin: 0;
+  padding: 0;
+  font-family: serif;
+}
+
+.home {
+  background: linear-gradient(-225deg, #AC32E4 0%, #7918F2 48%, #4801FF 100%);
+  width: 100vw;
+  height: 100vh;
+}
+
+.charact{
+  background: radial-gradient(801px at 4.2% 16.4%, rgba(104, 211, 218, 0.99) 0%, rgb(184, 77, 235) 88.8%);
+  width: 100vw;
+}
+
+.locale{
+  background: radial-gradient(circle at 10% 20%, rgb(163, 175, 243) 0%, rgb(220, 182, 232) 100.2%);
+  width: 100vw;
+}
+
+
+.piccont{
+  height: 50vh;
+  width: 50vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.pic{
+  width: 100%;
+  height: 100%;
+}
+
+.hamb{
+  height: 100vh;
+}
+
+.character{
+  padding: 5rem;
+  
+}
+
