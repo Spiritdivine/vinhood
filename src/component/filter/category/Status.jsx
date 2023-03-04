@@ -1,5 +1,5 @@
 import React from "react";
-import FilterBTN from "../FilterBTN";
+import FilterBTN from "../filterBTN";
 
 const Status = ({ updateStatus, updatePageNumber }) => {
   let status = ["Alive", "Dead", "Unknown"];
