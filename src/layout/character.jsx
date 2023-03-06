@@ -5,7 +5,7 @@ import React, { useState, useEffect } from "react";
 import Search from "../component/search/search";
 import Card from "../component/card/card";
 import Pagination from "../Pagination/pagination";
-import Filter, { ErrorBoundary } from "../component/filter/filter";
+import Filter from "../component/filter/filter";
 
 function Character() {
   let [pageNumber, updatePageNumber] = useState(1);
@@ -31,16 +31,14 @@ function Character() {
       <Search setSearch={setSearch} updatePageNumber={updatePageNumber} />
       <div className="container">
         <div className="row">
-          <ErrorBoundary>
-            <Filter
-              pageNumber={pageNumber}
-              status={status}
-              updateStatus={updateStatus}
-              updateGender={updateGender}
-              updateSpecies={updateSpecies}
-              updateLocation = {setLocationId}
-              updatePageNumber={updatePageNumber} />
-          </ErrorBoundary>
+          <Filter
+            pageNumber={pageNumber}
+            status={status}
+            updateStatus={updateStatus}
+            updateGender={updateGender}
+            updateSpecies={updateSpecies}
+            updateLocation = {setLocationId}
+            updatePageNumber={updatePageNumber} />
           <div className="col-lg-8 col-12">
             <div className="row">
               <Card page="/" results={results} />
